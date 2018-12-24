@@ -1,0 +1,126 @@
+.header-store {
+    overflow: hidden;
+    color: #fff;
+    margin-bottom: 118px;
+    padding-left: 60px;
+}
+
+.header-store [type="search"] {
+    margin-right: 65px;
+    width: 358px;
+    background: transparent;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: inherit;
+    padding: 8px;
+    border-bottom: 1px solid #fff;
+    vertical-align: bottom;
+}
+
+.header-store>.title {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header-store .action {
+    font-size: inherit;
+    color: inherit;
+    margin-right: 60px;
+    text-decoration: none;
+    padding-bottom: 8px;
+    display: inline-block;
+    position: relative;
+}
+
+.header-store>.navigation {
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+}
+
+.header-store .action:hover {}
+
+.header-store .action.-last {
+    margin-right: 0px;
+}
+
+.header-store .action:after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 200ms linear;
+    transform-origin: center left;
+}
+
+.header-store .action:hover:after {
+    transform: scale(1);
+}
+
+@media(max-width: 1310px) {
+    .header-store {
+        padding-right: 60px;
+    }
+}
+
+@media(max-width:1235px) {
+    .header-store>.title {
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .header-store>.navigation {
+        float: none;
+        text-align: center;
+
+    }
+}
+
+@media(max-width:955px) {
+    .header-store {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header-store [type="search"] {
+        display: none;
+    }
+}
+
+@media(max-width:530px) {
+    .header-store .action {
+        margin-right: 30px;
+    }
+}
+
+@media(max-width:465px) {
+    .header-store .action {
+        margin-right: 15px;
+    }
+}
+
+@media(max-width:375px) {
+    .header-store {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header-store .action {
+        margin-right: 8px;
+    }
+}
+
+@media(max-width:335px) {
+    .header-store>.navigation {
+        display: none;
+    }
+}

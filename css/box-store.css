@@ -1,0 +1,26 @@
+.box-store {
+    display: inline-block;
+    height: 554px;
+    background-color: #fff;
+    vertical-align: middle;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    margin-right: 157px;
+}
+
+@media (max-width:1325px) {
+    .box-store {
+        margin-right: 140px;
+        border-radius: 0;
+        text-align: center;
+    }
+}
+
+@media(max-width: 1310px) {
+    .box-store {
+        display: block;
+        margin-right: 0px;
+        margin-bottom: 30px;
+
+    }
+}

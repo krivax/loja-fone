@@ -1,0 +1,31 @@
+# markdownlint
+
+> Markdown/CommonMark linting and style checking for Visual Studio Code
+
+## Intro
+
+The [Markdown](https://en.wikipedia.org/wiki/Markdown) markup language is designed to be easy to read, write, and understand. It succeeds - and its flexibility is both a benefit and a drawback. Many styles are possible, so formatting can be inconsistent. Some constructs don't work well in all parsers and should be avoided. For example, [here are some common/troublesome Markdown constructs](https://gist.github.com/DavidAnson/006a6c2a2d9d7b21b025).
+
+[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) is a Visual Studio Code extension that includes a library of rules to encourage standards and consistency for Markdown files. It is powered by [markdownlint for Node.js](https://github.com/DavidAnson/markdownlint) which is based on [markdownlint for Ruby](https://github.com/mivok/markdownlint).
+
+## Install
+
+1. Open [Visual Studio Code](https://code.visualstudio.com/)
+2. Press `Ctrl+P` to open the Quick Open dialog
+3. Type `ext install markdownlint` to find the extension
+4. Click the `Install` button, then the `Enable` button
+
+OR
+
+1. Press `Ctrl+Shift+X` to open the Extensions tab
+2. Type `markdownlint` to find the extension
+3. Click the `Install` button, then the `Enable` button
+
+OR
+
+1. Open a command-line prompt
+2. Run `code --install-extension DavidAnson.vscode-markdownlint`
+
+## Use
+
+When editing a Markdown file in Code with markdownlint installed, any lines that violate one of markdownlint's rules (see 
