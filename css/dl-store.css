@@ -1,31 +1,97 @@
-# markdownlint
+.dl-store{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
 
-> Markdown/CommonMark linting and style checking for Visual Studio Code
+.dl-store > .title{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
 
-## Intro
+.dl-store > .item{
+    font-size: 20px;
+    margin-bottom: 28px;
+}
 
-The [Markdown](https://en.wikipedia.org/wiki/Markdown) markup language is designed to be easy to read, write, and understand. It succeeds - and its flexibility is both a benefit and a drawback. Many styles are possible, so formatting can be inconsistent. Some constructs don't work well in all parsers and should be avoided. For example, [here are some common/troublesome Markdown constructs](https://gist.github.com/DavidAnson/006a6c2a2d9d7b21b025).
+.dl-store >.item.-heart{
+    position: absolute;
+    transform: translateX(-100%);
+    top: 8px;
+    left: -47px;
+}
 
-[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) is a Visual Studio Code extension that includes a library of rules to encourage standards and consistency for Markdown files. It is powered by [markdownlint for Node.js](https://github.com/DavidAnson/markdownlint) which is based on [markdownlint for Ruby](https://github.com/mivok/markdownlint).
+.dl-store > .item.-star{
+    margin-bottom: 10px;
+}
 
-## Install
+.dl-store .icon{
+    cursor: pointer;
+    transition: transform 100ms linear;
+}
 
-1. Open [Visual Studio Code](https://code.visualstudio.com/)
-2. Press `Ctrl+P` to open the Quick Open dialog
-3. Type `ext install markdownlint` to find the extension
-4. Click the `Install` button, then the `Enable` button
+.dl-store .icon:hover{
+    transform: scale(1.2);
+}
 
-OR
+.dl-store > .item.-star + .item{
+    margin-left: 7px;
+}
 
-1. Press `Ctrl+Shift+X` to open the Extensions tab
-2. Type `markdownlint` to find the extension
-3. Click the `Install` button, then the `Enable` button
+.dl-store > .item.-info{
+    width: 200px;
+    text-align: right;
+}
 
-OR
+.dl-store > .item.-last{
+    margin-bottom: 72px;
+}
 
-1. Open a command-line prompt
-2. Run `code --install-extension DavidAnson.vscode-markdownlint`
+.dl-store .contrast{
+    text-transform: uppercase;
+    float: left;
+}
 
-## Use
+.dl-store > .text{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
 
-When editing a Markdown file in Code with markdownlint installed, any lines that violate one of markdownlint's rules (see 
+.dl-store > .text.-more{
+    margin-bottom: 0;
+}
+
+.dl-store .action{
+    color: inherit;
+   text-decoration: none;
+}
+
+@media (max-width: 1020px){
+    .dl-store >.item.-heart{
+        left: -15px;
+    }
+}   
+
+@media (max-width: 855px){
+     .dl-store >.item.-heart{
+        position: static;
+        transform: none;
+    }
+
+    .dl-store > .title{
+        margin-bottom: 10px;
+    }
+
+    .dl-store{
+        text-align: center;
+    }
+
+    .dl-store > .item.-info{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dl-store > .text{
+        text-align: justify;
+    }   
+}
