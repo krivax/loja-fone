@@ -24,3 +24,12 @@
 
     }
 }
+
+@media(max-width: 560px) {
+    .box-store{
+        height: auto;
+    }
+    .box-store >.photo {
+        width: 100%;
+    }
+}
