@@ -18,6 +18,10 @@
     vertical-align: bottom;
 }
 
+.header-store [type="search"]::placeholder{
+    color: inherit;
+}
+
 .header-store>.title {
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -68,10 +72,14 @@
 @media(max-width: 1310px) {
     .header-store {
         padding-right: 60px;
+
     }
 }
 
 @media(max-width:1235px) {
+    .header-store{
+        margin-bottom: 60px;
+    }
     .header-store>.title {
         float: none;
         text-align: center;
@@ -85,7 +93,7 @@
     }
 }
 
-@media(max-width:955px) {
+@media(max-width:968px) {
     .header-store {
         padding-left: 30px;
         padding-right: 30px;
