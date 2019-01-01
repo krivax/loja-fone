@@ -18,15 +18,40 @@
     transform: translateX(-100%);
     top: 8px;
     left: -47px;
+    width: 33px;
+    height: 29px;
 }
 
 .dl-store > .item.-star{
     margin-bottom: 10px;
 }
+.dl-store .star{
+    display: inline-block;
+}
+
+.dl-store .star.-active > .icon{
+    display: none;
+}
+
+.dl-store .star.-active > .-active{
+    display: block;
+}
 
 .dl-store .icon{
     cursor: pointer;
     transition: transform 100ms linear;
+}
+
+.dl-store .icon.-active{
+    display: none;
+}
+
+.dl-store > .item.-active .icon{
+    display: none;
+}
+
+.dl-store > .item.-active .icon.-active{
+    display: block;
 }
 
 .dl-store .icon:hover{
