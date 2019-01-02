@@ -29,8 +29,6 @@ function middleStar(index){
             $star.classList.add("-active");
             }
     });
-
-
 }
 
 function firstStar(){
