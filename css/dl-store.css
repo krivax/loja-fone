@@ -100,7 +100,7 @@
     .dl-store > .title{
         font-size: 35px;
         text-align: center;
-        margin-bottom: 15px;
+
     }
     .dl-store > .item.-star {
         float: left;
@@ -110,9 +110,8 @@
         padding-top: 4px;
     }
     .dl-store >.item.-heart{
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
+        left: auto;
+        transform: none;
     }
 }   
 
@@ -120,5 +119,16 @@
     .dl-store {
         width: 90%;
         min-width: auto;
+    }
+}
+
+@media (max-width: 475px) {
+    .dl-store >.item.-heart{
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dl-store > .title{
+     margin-bottom: 15px;
     }
 }
