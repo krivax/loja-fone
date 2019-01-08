@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/container-store.css">
         <link rel="stylesheet" href="css/header-store.css">
+        <link rel="stylesheet" href="css/input-search.css">
         <link rel="stylesheet" href="css/buttom-store.css">
         <link rel="stylesheet" href="css/dl-store.css">
         <link rel="stylesheet" href="css/box-store.css">
@@ -24,10 +25,23 @@
             <header class="header-store">
                 <h1 class="title">Logo</h1>
                 <nav class="navigation">
-                    <input type="search" placeholder="Buscar">
-                    <a class="action" href="#">Produtos</a>
-                    <a class="action" href="#">Serviços</a>
-                    <a class="action -last" href="#">Carrinho (0)</a>
+                    <form class="input-search">
+                       <input class="content" type="search" placeholder="Buscar" /><!--
+                    --><input class="icon -open -active -inative" type="image" src="images/search.svg"><!--
+                    --><input class="icon -close" type="image" src="images/cancel.svg">
+                    </form>
+                        <ul id="menu" class="list">
+                            <li class="item -menu"><a class="menu" href="#menu">Menu</a></li>
+                            <li class="item">
+                                <a class="action" href="#">Produtos</a>
+                            </li>
+                            <li class="item">
+                                <a class="action" href="#">Serviços</a>
+                            </li>
+                            <li class="item -last">
+                                <a class="action" href="#">Carrinho (0)</a>
+                            </li>
+                    </ul>
                 </nav>
             </header>
             <figure class="box-store"><img class="photo" src="images/fone.png" alt="fone de ouvido"></figure>
@@ -79,9 +93,10 @@
 
         </div>
 
+        <script src="/js/input-search.js"></script>
         <script src="/js/dl-store.js"></script>
         <script src="/js/home.js"></script>
-        <script src="/js/header-store.js"></script>
+     
     </body>
 
 </html>
