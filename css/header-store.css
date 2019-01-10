@@ -2,7 +2,7 @@
     overflow: hidden;
     color: #fff;
     margin-bottom: 118px;
-    padding-left: 60px;
+    padding-left: 60px; 
 }
 
 .header-store>.title {
@@ -124,13 +124,37 @@
         box-shadow:3px 3px 3px rgba(0,0,0,0.5);
         position: absolute;
         top:0;
-        right: 0;
-        overflow: hidden;
-
-        
+        left:0;
+        transform: translateX(-100%);
+        transition: transform 400ms 100ms linear;
+        cursor: pointer;
     }
-    .header-store .action{
-        display: none;
-        
+    .header-store .list{
+        background-color:#e24647;
+        color: #fff;
+        position: absolute;
+        width: 100vw;
+        padding: 40px 0 10px; 
+        top:0;
+        right: 0;
+        transform: translateX(100%);
+        transition: transform 300ms linear;
+    }
+
+    .header-store .list.-active{
+        transform: translateX(0%); 
+    }
+
+    .header-store .list.-active .item.-menu{
+        transform: translateX(0);
+        background-image: url(../images/cancel.svg);
+        background-color: #e24647;
+        box-shadow: none;
+        transition: none;
+
+    }
+
+    .header-store .item{
+        display: block;
     }
 }
