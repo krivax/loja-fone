@@ -13,6 +13,16 @@
     cursor: pointer;
 }
 
+.header-store>.navigation {
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+}
+
+.header-store .list {
+    display: inline-block;
+}
+
 .header-store .item {
     display: inline-block;
     margin-right: 60px;
@@ -32,11 +42,6 @@
     position: relative;
 }
 
-.header-store>.navigation {
-    font-size: 21px;
-    font-family: 'Roboto', sans-serif;
-    float: right;
-}
 
 /* .header-store .action:hover {} */
 

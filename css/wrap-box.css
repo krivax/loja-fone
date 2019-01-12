@@ -1,6 +1,6 @@
 .wrap-box {
     display: inline-block;
-    width: 554px;
+    width: 454px;
     vertical-align: middle;
     position: relative;
 }
@@ -8,6 +8,13 @@
 .wrap-box>.btn {
     position: absolute;
     transform: translateY(calc(100% + 28px));
+    width: 100%;
+}
+.wrap-box>.btn> .button-store{
+    float: right;
+}
+.wrap-box>.btn> .button-store.-second{
+    float: left;
 }
 
 @media(max-width: 1310px) {
@@ -23,4 +30,9 @@
         text-align: center;
         transform: none;
     }
+    .wrap-box>.btn> .button-store,
+    .wrap-box>.btn> .button-store.-second{
+        float: none;
+    }
 }
+
